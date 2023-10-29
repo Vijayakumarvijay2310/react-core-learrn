@@ -1,3 +1,79 @@
-#heading {
-    color:red;
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    width: auto;
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+.logo {
+    width: 100px;
+}
+
+.app-name {
+    color: palevioletred;
+    font-size: larger;
+    padding-top: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-items > ul {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav-items > ul > li {
+    font-size: large;
+    padding: 30px 10px 0 0;
+    margin: 10px;
+}
+
+.res-container{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.res-card {
+    box-shadow: -1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    width: 200px;
+}
+.res-card > h4 {
+    padding:5px 0px;
+    color: grey;
+}
+.res-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search {
+    padding: 10px;
+}
+
+.res-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.res-card > span {
+    display: flex;
+    padding-top: 4px;
+    justify-content: space-evenly;
+}
+
+.res-card > span > h4 {
+    text-align: center;
 }

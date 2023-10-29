@@ -19,3 +19,20 @@
 - Https
 - Tree Shaking - remove unused code
 - Different dev and prod Bundles
+
+/**
+*Header
+ -logo
+ -nav-items
+
+*body
+ -search bar
+ -restaurant container
+ -restaurant cards
+ --restaurant details
+
+*footer
+ -copy right
+ -links
+ -Address
+ -contact
