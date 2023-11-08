@@ -1,9 +1,11 @@
+/* select all CSS */
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+/*Header CSS */
 .header {
     display: flex;
     width: auto;
@@ -36,6 +38,7 @@
     margin: 10px;
 }
 
+/* BODY */
 .res-container{
     width: auto;
     display: flex;
@@ -64,6 +67,7 @@
 }
 
 .res-image {
+    height: 125px;
     width: 100%;
     border-radius: 5px;
 }
@@ -78,11 +82,69 @@
     text-align: center;
 }
 
+.filters {
+    display: flex;
+}
+
 .filter-btn {
     padding: 5px;
     border: 1px solid #DB7093;
     border-radius: 5px;
     background-color: #DB7093;
     color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* Shimmer */
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card {
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    background-color: #f0f0f0 ;
+}
+
+.shimmer-card-image {
+    height: 125px;
+    margin: 5px;
+    width: 190px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.shimmer-card-name {
+    height: 25px;
+    width: 65px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.shimmer-card-cuisine {
+    height: 25px;
+    width: 85px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.shimmer-card-location {
+    height: 25px;
+    width: 65px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.login {
+    padding: 0 20px;
+    cursor: pointer;
     margin: 10px;
 }
