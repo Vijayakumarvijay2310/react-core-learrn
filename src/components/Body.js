@@ -1,24 +1,28 @@
 import RestaurantCards from "./RestaurantCards";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body =()=>{
 
     const [listOfRestaurants,setListOfRestaurants] = useState([]);
     const [searchFood,setSearchFood] =useState("");
     const [reSearchFood,setReSearchFood] = useState([])
+    console.log(useState());
 
     
     useEffect(()=>{
         fetchData();
     },[])
 
+
+// I have used CORS proxy.io before api in fetching data for solving CORS bypassing issue
+
     const fetchData= async ()=>{
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.129011&lng=77.349661&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        const data = await fetch(
+            "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.129011&lng=77.349661&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
         );
-    console.log(data);
         const json = await data.json();
-        console.log(json);
         setListOfRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setReSearchFood(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)    
     }
@@ -54,7 +58,7 @@ const Body =()=>{
         <div className="res-container">  
         {reSearchFood.map((restaurant)=>{
             return(
-                <RestaurantCards key={restaurant.info.id} resData={restaurant}/>
+                <Link to={"/restaurants/"+restaurant.info.id} key={restaurant.info.id}><RestaurantCards  resData={restaurant}/></Link>
             )
         })}
         </div>
