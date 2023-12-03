@@ -7,7 +7,6 @@ const RestaurantDetails =()=>{
 
     const [resDetailData,setResDetailData] =useState(null)
     const {resId} = useParams();
-    console.log(resId);
 
     useEffect(()=>{
         fetchMenu()
