@@ -13,9 +13,7 @@ class About extends React.Component {
 
    
 
-componentDidUpdate (){
-    console.log("parent did update");
-}
+
   
     render(){
         return(

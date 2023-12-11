@@ -4,13 +4,13 @@ const User = (props) =>{
     const {name ,age} = props;
 
     useEffect(()=>{
-        const timer = setInterval(()=>{
-            console.log("second interval called");
-        })
+        // const timer = setInterval(()=>{
+        //     console.log("second interval called");
+        // })
 
-        return ()=>{
-            clearInterval(timer)
-        }
+        // return ()=>{
+        //     clearInterval(timer)
+        // }
     })
     
     return(
