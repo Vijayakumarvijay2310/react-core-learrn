@@ -21,7 +21,9 @@
   "homepage": "https://github.com/Vijayakumarvijay2310/react-core-learrn#readme",
   "devDependencies": {
     "parcel": "^2.10.3",
-    "process": "^0.11.10"
+    "postcss": "^8.4.32",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.6"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

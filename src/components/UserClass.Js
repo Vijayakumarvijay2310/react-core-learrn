@@ -1,7 +1,8 @@
 import React from "react";
-
+import UserContext from "../utils/UserContext";
 
 class UserClass extends React.Component{
+
     constructor(props){
         super(props)
 
@@ -13,6 +14,8 @@ class UserClass extends React.Component{
             }
         }
     }
+    
+    
 
     async componentDidMount(){
         const data = await fetch("https://api.github.com/users/Vijayakumarvijay2310")
@@ -31,7 +34,8 @@ class UserClass extends React.Component{
 
         return(  
             <div className="UserClass">
-            <img src="https://avatars.githubusercontent.com/u/93508681?v=4" alt="userImage"></img>
+                
+            <img src="https://avatars.githubusercontent.com/u/93508681?v=4" alt="userImage" className="w-10"></img>
             <h2>{name}</h2>
             <h3>{company}</h3>
             <h4>{location}</h4>

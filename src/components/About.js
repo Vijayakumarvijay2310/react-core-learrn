@@ -1,7 +1,7 @@
 import React from "react";
 import UserClass from "./UserClass.Js";
 import User from "./User.js";
-import { json } from "react-router-dom";
+import UserContext from "../utils/UserContext.js";
 
 class About extends React.Component {
     constructor(){
@@ -18,13 +18,16 @@ class About extends React.Component {
     render(){
         return(
             <>
-            <h1>About</h1>
+            <h1>About Class component</h1>
             <div>{this.state.count}</div>
             <div onClick={()=>{
                 this.setState({
                     count:this.state.count -1
                 })
             }}>decrease</div>
+            <UserContext.Consumer>
+                {({loggedInUser})=><div>{loggedInUser}</div>}
+            </UserContext.Consumer>
             <UserClass/>
             <User name={"Karthi"} age={21}/>
             </>
