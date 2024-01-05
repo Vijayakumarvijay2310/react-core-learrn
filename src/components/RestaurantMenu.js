@@ -40,13 +40,8 @@ const itemCategory = resDetailData?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR
                     index = {index}
                     setShowItem = {() => setShowItem(showItem === index ? null : index)}
                     />
-               ))}
-
+               ))}     
         </div>
-
-
-        
-        
     );
 };
 

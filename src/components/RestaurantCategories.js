@@ -8,7 +8,7 @@ const RestaurantCategories = ({data,showItem,setShowItem}) =>{
     return (
         <div>
             {/* Header */}
-        <div className="w-6/12 border-b-2  bg-gray-50 mx-auto my-4 p-4 shadow-lg">
+        <div className="w-6/12 border-b-2 bg-gray-50 mx-auto my-4 p-4 shadow-lg">
             <div 
             className=" flex justify-between cursor-pointer" 
             onClick={handleClick}
